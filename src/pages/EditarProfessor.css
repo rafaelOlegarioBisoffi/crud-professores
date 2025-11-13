@@ -1,0 +1,26 @@
+.editar-professor {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.editar-professor h1 {
+  margin-bottom: 2rem;
+}
+
+.alerta {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.alerta-erro {
+  background-color: #fadbd8;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+}
+
+.carregando {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+}

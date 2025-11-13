@@ -1,0 +1,26 @@
+.criar-professor {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.criar-professor h1 {
+  margin-bottom: 2rem;
+}
+
+.alerta {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.alerta-erro {
+  background-color: #fadbd8;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+}
+
+.alerta-sucesso {
+  background-color: #d5f4e6;
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}

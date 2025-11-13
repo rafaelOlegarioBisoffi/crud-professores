@@ -1,0 +1,206 @@
+.lista-professores {
+  width: 100%;
+}
+
+.header-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-novo {
+  display: inline-block;
+  background-color: #27ae60;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-novo:hover {
+  background-color: #229954;
+}
+
+.filtro {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-filtro {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.75rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-filtro:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.resultado-filtro {
+  color: #7f8c8d;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tabela-container {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela thead {
+  background-color: #34495e;
+  color: white;
+}
+
+.tabela th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.tabela td {
+  padding: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.tabela tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.coluna-acoes {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-detalhes,
+.btn-editar,
+.btn-deletar {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-detalhes {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-detalhes:hover {
+  background-color: #2980b9;
+}
+
+.btn-editar {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #e67e22;
+}
+
+.btn-deletar {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-deletar:hover {
+  background-color: #c0392b;
+}
+
+.carregando,
+.vazio {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.vazio a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.vazio a:hover {
+  text-decoration: underline;
+}
+
+.alerta {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.alerta-erro {
+  background-color: #fadbd8;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .header-lista {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-novo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filtro {
+    flex-direction: column;
+  }
+
+  .input-filtro {
+    min-width: 100%;
+  }
+
+  .coluna-acoes {
+    flex-direction: column;
+  }
+
+  .btn-detalhes,
+  .btn-editar,
+  .btn-deletar {
+    width: 100%;
+  }
+
+  .tabela {
+    font-size: 0.875rem;
+  }
+
+  .tabela th,
+  .tabela td {
+    padding: 0.5rem;
+  }
+}
